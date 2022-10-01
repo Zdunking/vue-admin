@@ -1,15 +1,15 @@
 <template>
   <div>
-    <management></management>
+
+    <router-view />
   </div>
 </template>
 
 <script>
-import management from './components/Management.vue';
 export default {
 
   name: 'App',
-  components: { management }
+  components: {}
 }
 </script>
 
