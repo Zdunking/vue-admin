@@ -5,7 +5,7 @@
       <el-input @change="searchArticle" v-model="input" placeholder="请输入内容"></el-input>
       <el-button type="primary">查询</el-button>
       <el-button type="primary">
-        <router-link to="/addArticle" style="color:#fff">添加</router-link>
+        <router-link to="/articleAdd" style="color:#fff">添加</router-link>
       </el-button>
     </div>
     <!-- 表格区域展示 -->
