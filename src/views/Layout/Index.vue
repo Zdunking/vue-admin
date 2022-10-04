@@ -16,11 +16,11 @@ export default {
 
 </script>
 
-<style Lang='less' scoped>
+<style lang='less' scoped>
 .layout {
     display: flex;
 
-    .enu {
+    .menu {
         width: 200px;
         min-height: 500px;
         background: #666;
@@ -31,3 +31,4 @@ export default {
     }
 }
 </style>
+

@@ -18,5 +18,15 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  }
+    },
+  proxy: {
+            '/api': {
+                target: 'http://localhost:9999',
+                secure: false,
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/api':'',
+                }
+            }
+        }
 }
