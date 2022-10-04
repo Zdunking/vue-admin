@@ -6,13 +6,13 @@ import Home from '../views/Manager/Home/index'
 
 
 //异步
-const ArticleManager = () => import('../views/Manager/ArticleManager/index')
+const ArticleList = () => import('../views/Manager/ArticleManager/index')
 const UserManager = () => import('../views/Manager/UserManager/index')
 const OrderManager = () => import('../views/Manager/ArticleManager/index')
 const PersonalCenter = () => import('../views/Manager/PersonalCenter/index')
 
 //子级路由
-const AddArticle = () => import('../views/Manager/ArticleManager/AddArticle')
+const ArticleAdd = () => import('../views/Manager/ArticleManager/ArticleAdd')
 
 
 Vue.use(Router)
@@ -28,15 +28,14 @@ export default new Router({
               name: 'Home',
               component:Home
           }, {
-              path: '/articlemanager',
-              name: 'ArticleManager',
-            //   redirect:'/articlemanager/list',
-              component :ArticleManager
+              path: '/articleList',
+              name: 'ArticleList',
+              component :ArticleList
           },
           {
-              path: '/addArticle',
+              path: '/ArticleAdd',
               name: 'AddArticle',
-              component:AddArticle
+              component:ArticleAdd
           },
           {
               path: '/ordermanager',

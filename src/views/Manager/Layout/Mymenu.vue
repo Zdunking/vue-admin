@@ -17,15 +17,21 @@
         <span slot="title">首页</span>
       </el-menu-item>
       <el-menu-item index="/usermanager">
-        <i class="el-icon-document"></i>
+        <i class="el-icon-user-solid"></i>
         <span slot="title">用户管理</span>
       </el-menu-item>
-      <el-menu-item index="/articlemanager">
-        <i class="el-icon-setting"></i>
-        <span slot="title">文章管理</span>
-      </el-menu-item>
+      <el-submenu index="1">
+        <template slot="title">
+          <i class="el-icon-document"></i>
+          <span>素材管理</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="/articleList">素材列表</el-menu-item>
+          <el-menu-item index="/articleAdd">上传素材</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
 
-      <el-submenu index="/ordermanager">
+      <el-submenu index="2">
         <template slot="title">
           <i class="el-icon-location"></i>
           <span>订单管理</span>
